@@ -1,9 +1,10 @@
 const title = document.getElementById("title");
 const message = document.querySelector(".message");
+const button = document.getElementById("changeButton");
 
-title.textContent = "Updated Title";
-message.textContent = "The message was changed by JavaScript.";
-
-title.style.color = "blue";
-
-message.classList.add("active");
+button.addEventListener("click", function () {
+    title.textContent = "Updated Title";
+    message.textContent = "The DOM was changed!";
+    title.style.color = "blue";
+    message.classList.add("active");
+});
